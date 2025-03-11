@@ -1,0 +1,4 @@
+{"level":"error","message":"Error connecting to MongoDB: querySrv ENOTFOUND _mongodb._tcp.cluster0.mongodb.net","timestamp":"2025-03-11 17:04:55:455"}
+{"level":"error","message":"Error connecting to MongoDB: querySrv ENOTFOUND _mongodb._tcp.cluster0.mongodb.net","timestamp":"2025-03-11 17:06:51:651"}
+{"level":"error","message":"Error connecting to MongoDB: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017","timestamp":"2025-03-11 17:14:02:142"}
+{"level":"error","message":"Error connecting to MongoDB: querySrv ENOTFOUND _mongodb._tcp.cluster0.mongodb.net","timestamp":"2025-03-11 17:15:22:1522"}

@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 30
+    },
+    "auditLog": "C:\\Users\\lenovo\\OneDrive\\Desktop\\GRITHUB TECH\\JSAG_App\\src\\logs\\.dda67b2f986edeab1ec4e182af2427b2b9c740d8-audit.json",
+    "files": [
+        {
+            "date": 1741712589865,
+            "name": "C:\\Users\\lenovo\\OneDrive\\Desktop\\GRITHUB TECH\\JSAG_App\\src\\logs\\audit-2025-03-11.log",
+            "hash": "daac550f482a987ddf027ed721fdadf687ab60711ec6120f810be1696218336c"
+        }
+    ],
+    "hashType": "sha256"
+}

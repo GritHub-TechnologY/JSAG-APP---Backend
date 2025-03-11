@@ -1,0 +1,13 @@
+{"level":"info","message":"Server running in development mode on port 3000","timestamp":"2025-03-11 17:03:19:319"}
+{"level":"info","message":"Server running in development mode on port 3000","timestamp":"2025-03-11 17:04:55:455"}
+{"level":"error","message":"Error connecting to MongoDB: querySrv ENOTFOUND _mongodb._tcp.cluster0.mongodb.net","timestamp":"2025-03-11 17:04:55:455"}
+{"level":"info","message":"Server running in development mode on port 3000","timestamp":"2025-03-11 17:06:21:621"}
+{"level":"info","message":"Server running in development mode on port 3000","timestamp":"2025-03-11 17:06:51:651"}
+{"level":"error","message":"Error connecting to MongoDB: querySrv ENOTFOUND _mongodb._tcp.cluster0.mongodb.net","timestamp":"2025-03-11 17:06:51:651"}
+{"level":"info","message":"Server running in development mode on port 3000","timestamp":"2025-03-11 17:13:32:1332"}
+{"level":"error","message":"Error connecting to MongoDB: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017","timestamp":"2025-03-11 17:14:02:142"}
+{"level":"info","message":"Server running in development mode on port 3000","timestamp":"2025-03-11 17:15:22:1522"}
+{"level":"error","message":"Error connecting to MongoDB: querySrv ENOTFOUND _mongodb._tcp.cluster0.mongodb.net","timestamp":"2025-03-11 17:15:22:1522"}
+{"level":"info","message":"Server running in development mode on port 3000","timestamp":"2025-03-11 17:17:28:1728"}
+{"level":"info","message":"MongoDB Connected: cluster0-shard-00-02.uopsw.mongodb.net","timestamp":"2025-03-11 17:17:31:1731"}
+{"level":"info","message":"Server running in development mode on port 3000","timestamp":"2025-03-11 17:21:31:2131"}
