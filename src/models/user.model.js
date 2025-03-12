@@ -31,13 +31,23 @@ const userSchema = new mongoose.Schema({
   },
   role: {
     type: String,
-    enum: ['user', 'manager', 'admin'],
-    default: 'user'
+    enum: ['admin', 'leader', 'member'],
+    default: 'member'
   },
   dayGroup: {
     type: String,
-    enum: ['A', 'B', 'C', 'D'],
-    required: [true, 'Please specify a day group']
+    enum: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'adminDay'],
+    required: [true, 'Please specify a day group'],
+    validate: {
+      validator: function(value) {
+        // Only admins can have adminDay
+        if (value === 'adminDay' && this.role !== 'admin') {
+          return false;
+        }
+        return true;
+      },
+      message: 'Only admin users can be assigned to adminDay'
+    }
   },
   department: {
     type: String,
@@ -52,7 +62,7 @@ const userSchema = new mongoose.Schema({
     ref: 'User',
     validate: {
       validator: async function(memberId) {
-        if (this.role !== 'manager') return true;
+        if (this.role !== 'leader') return true;
         const member = await mongoose.model('User').findById(memberId);
         return member && member.dayGroup === this.dayGroup;
       },

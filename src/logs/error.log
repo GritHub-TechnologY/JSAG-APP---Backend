@@ -2,3 +2,12 @@
 {"level":"error","message":"Error connecting to MongoDB: querySrv ENOTFOUND _mongodb._tcp.cluster0.mongodb.net","timestamp":"2025-03-11 17:06:51:651"}
 {"level":"error","message":"Error connecting to MongoDB: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017","timestamp":"2025-03-11 17:14:02:142"}
 {"level":"error","message":"Error connecting to MongoDB: querySrv ENOTFOUND _mongodb._tcp.cluster0.mongodb.net","timestamp":"2025-03-11 17:15:22:1522"}
+{"level":"error","message":"Error: AuthService.registerUser is not a function","method":"POST","path":"/api/auth/register","timestamp":"2025-03-12 11:46:02:462"}
+{"level":"error","message":"Error: User already exists with this email","method":"POST","path":"/api/auth/register","timestamp":"2025-03-12 11:48:06:486"}
+{"level":"error","message":"Error: User already exists with this email","method":"POST","path":"/api/auth/register","timestamp":"2025-03-12 11:48:41:4841"}
+{"level":"error","message":"Error: User already exists with this email","method":"POST","path":"/api/auth/register","timestamp":"2025-03-12 11:48:51:4851"}
+{"level":"error","message":"Error: User validation failed: role: `member` is not a valid enum value for path `role`., dayGroup: `Monday` is not a valid enum value for path `dayGroup`.","method":"POST","path":"/api/auth/login","timestamp":"2025-03-12 11:48:58:4858"}
+{"level":"error","message":"UNCAUGHT EXCEPTION! 💥 Shutting down...","timestamp":"2025-03-12 11:54:23:5423"}
+{"level":"error","message":"UNCAUGHT EXCEPTION! 💥 Shutting down...","timestamp":"2025-03-12 11:55:33:5533"}
+{"level":"error","message":"UNCAUGHT EXCEPTION! 💥 Shutting down...","timestamp":"2025-03-12 12:45:41:4541"}
+{"level":"error","message":"Error: User validation failed: dayGroup: `Monday` is not a valid enum value for path `dayGroup`.","method":"POST","path":"/api/auth/login","timestamp":"2025-03-12 12:46:25:4625"}

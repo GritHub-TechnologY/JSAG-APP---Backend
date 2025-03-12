@@ -35,6 +35,45 @@ class AuthService {
   }
 
   /**
+   * Register a new user
+   */
+  static async registerUser(userData, userAgent, ipAddress) {
+    const { email } = userData;
+
+    // Check if user already exists
+    const existingUser = await User.findOne({ email });
+    if (existingUser) {
+      throw new Error('User already exists with this email');
+    }
+
+    // Create new user
+    const user = await User.create(userData);
+
+    // Generate tokens
+    const tokens = await this.generateTokens(user, userAgent, ipAddress);
+
+    // Log successful registration
+    auditLogger.info('New user registered', {
+      userId: user._id,
+      email: user.email,
+      role: user.role,
+      ipAddress
+    });
+
+    return {
+      user: {
+        id: user._id,
+        name: user.name,
+        email: user.email,
+        role: user.role,
+        dayGroup: user.dayGroup,
+        department: user.department
+      },
+      ...tokens
+    };
+  }
+
+  /**
    * Authenticate user with email and password
    */
   static async authenticateUser(email, password, userAgent, ipAddress) {
